@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+    <h1>{{ page.title }}</h1>
+    {% if page.profile_picture %}
+        {% image page.profile_picture fill-200x200 as profile_img %}
+        <img src="{{ profile_img.url }}" alt="{{ page.title }} profile picture" width="{{ profile_img.width }}" height="{{ profile_img.height }}">
+    {% endif %}
+    <div>
+        {{ page.bio|richtext }}
+    </div>
+{% endblock %}

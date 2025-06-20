@@ -4,3 +4,7 @@ wagtailnews
 setuptools
 wagtailmenus
 wagtail_modeladmin
+wagtailmedia
+wagtail-autocomplete
+wagtail-markdown
+wagtail-seo>=3.0.0
