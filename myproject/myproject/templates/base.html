@@ -1,4 +1,5 @@
 {% load static wagtailcore_tags wagtailuserbar %}
+{% load menu_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +34,7 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
+        {% main_menu %}
 
         {% block content %}{% endblock %}
 
